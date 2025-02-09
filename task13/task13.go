@@ -1,14 +1,20 @@
-// Given length of the circle named L. Find Radius and Surface
+// Given three-digit number. Replace it's first and last units
 package main
 import "fmt"
 func main()  {
-	var l float64
-	fmt.Print("Enter length = ")
-	fmt.Scan(&l)
+	var num int
+	fmt.Print("Enter number = ")
+	fmt.Scanln(&num)
 
-	radius := (2*3.14)/l
-	surface := radius*radius*3.14
-	fmt.Println("Radius = ",radius)
-	fmt.Println("Surface = ", surface)
+	if num < 100 || num > 999{
+		fmt.Println("Please enter three-digit number")
+		return
+	}
 
+	a := ((num % 10)%10) *100
+	b := ((num/10)%10) * 10
+	c := (num/100)
+
+
+	fmt.Println(a+b+c)
 }

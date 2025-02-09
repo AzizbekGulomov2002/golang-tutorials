@@ -1,15 +1,17 @@
-// Given the Radius of the sphere. Find the Length and Surface of Circle
+// Given decimal number. Find multiplication and sum of it's unit and decimal parts
 package main
 import "fmt"
 func main()  {
-	var r float64
+	var num int
+	fmt.Print("Enter decimal number = ")
+	fmt.Scanln(&num)
 
-	fmt.Print("Enter the radius of sphere = ")
-	fmt.Scan(&r)
+	decimal := num / 10
+	unit := num % 10
 
-	l := 2*3.14*r
-	s := r*r*3.14
-
-	fmt.Println("Length of the sphere = ", l)
-	fmt.Println("Surface of the sphere = ", s)
+	sum := decimal + unit
+	multiplied := decimal * unit
+	
+	fmt.Println("Sum of units = ", sum)
+	fmt.Println("Multiplication of units = ", multiplied)
 }

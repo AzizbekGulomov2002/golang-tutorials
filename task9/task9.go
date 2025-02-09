@@ -1,19 +1,19 @@
-// Give that not equal two numbers. Find its sum, difference, multiplication, division
-
+// Given three digit number. Find it's decimal and unit part of it
 package main
 import "fmt"
-var a,b uint
 func main()  {
-	fmt.Print("Enter a = ")
-	fmt.Scan(&a)
+	var num int
+	fmt.Print("Enter three digit number = ")
+	fmt.Scanln(&num)
 
-	fmt.Print("Enter b = ")
-	fmt.Scan(&b)
+	if num < 100 || num > 999{
+		fmt.Println("Please enter only three digit")
+		return
+	}
 
-	sum := a+b
-	difference := a-b
-	multiplication := a*b
-	division := a/b
+	decimal := (num / 10 ) % 10
+	unit  := num % 10
 
-	fmt.Println("Sum = ", sum, "Difference = ", difference, "Multiplication = ", multiplication,"Division = ", division)
+	fmt.Println(decimal, unit)
+
 }

@@ -1,24 +1,13 @@
-// Given Rectangle shaped paralellogram's edges "a, b, c". Find Volume, Surface
+// Given decimal number. Return its decimal and unit parts
 package main
 import "fmt"
 func main()  {
-	var (
-		a float64
-		b float64
-		c float64
-	)
-	fmt.Print("Enter side a = ")
-	fmt.Scan(&a)
+	var num int
+	fmt.Print("Enter decimal number = ")
+	fmt.Scanln(&num)
 
-	fmt.Print("Enter side b = ")
-	fmt.Scan(&b)
+	decimal := num / 10
+	unit := num % 10
 
-	fmt.Print("Enter side c = ")
-	fmt.Scan(&c)
-
-	v := a*b*c
-	s := 2*(a*b+a*c+b*c)
-
-	fmt.Println("Volume is = ", v)
-	fmt.Println("Surface is = ", s)
-}
+	fmt.Println("Decimal part:", decimal, "Unit part:", unit)
+}b

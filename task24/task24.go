@@ -1,16 +1,10 @@
-// Given x. Find degree2, degree2, degree5, degree10, degree15
+// // Given days of week with numbers. 1st January Sunday. 0-Sunday, 1-Monday ... 6-Saturday. Find which(1-365) numbers will which day of the week
 package main
 import "fmt"
 func main()  {
-	var a float64
-	fmt.Print("Enter a = ")
-	fmt.Scan(&a)
+	var day uint
+	fmt.Print("Enter day = ")
+	fmt.Scanln(&day)
 
-	a2 := a*a
-	a3 := a2*a
-	a5 := a3*a2
-	a10 := a5*a5
-	a15 := a10*a5
-
-	fmt.Println("A15 = ", a15)
+	fmt.Println((day+3)%7)
 }

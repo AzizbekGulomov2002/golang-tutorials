@@ -1,11 +1,10 @@
-// Given x. Find y = 4(x-3)*6 - 7*(x-3)*3-2
+// Given n seconds, generate it's hours and remaining seconds
 package main
 import "fmt"
 func main()  {
-	var x float64
-	fmt.Print("Enter x = ")
-	fmt.Scan(&x)
+	var num uint
+	fmt.Print("Enter number = ")
+	fmt.Scanln(&num)
 
-	y := 4*(x-3)*6 - 7*(x-3)*3-2
-	fmt.Println("Value y = ", y)
+	fmt.Println(num%100)
 }

@@ -1,26 +1,14 @@
-// Given points of the rectcle (x1,x2) and (y1, y2). Find their sides and perimeter, surfaces
+// Given four-digit number. Find it's thousand's place
 package main
 import "fmt"
 func main()  {
-	var x1,x2,y1,y2 float64
-	fmt.Print("Enter x1 = ")
-	fmt.Scan(&x1)
-
-	fmt.Print("Enter x2 = ")
-	fmt.Scan(&x2)
-
-	fmt.Print("Enter y1 = ")
-	fmt.Scan(&y1)
-
-	fmt.Print("Enter y2 = ")
-	fmt.Scan(&y2)
-
-	a := x2-x1
-	b := y2 - y1
-
-	perimeter := 2*(a+b)
-	surface := a*b
-
-	fmt.Println("Perimeter = ", perimeter)
-	fmt.Println("Surface = ", surface)
+	var num int // 1234 -> 1
+	fmt.Print("Enter four-digit number = ")
+	fmt.Scanln(&num)
+	if num < 1000 || num > 9999{
+		fmt.Println("Please enter four-digit number")
+		return
+	}
+	a := (num / 1000)
+	fmt.Println(a)
 }

@@ -1,16 +1,10 @@
-// Given x number. Find second degree, third and fourth degree
+// Given days of week with numbers. 1st January Monday. 0-Sunday, 1-Monday ... 6-Saturday. Find which(1-365) numbers will which day of the week
 package main
 import "fmt"
 func main()  {
-	var x float64
-	fmt.Print("Enter x = ")
-	fmt.Scan(&x)
+	var day uint
+	fmt.Print("Enter day = ")
+	fmt.Scanln(&day)
 
-	second := x*x
-	third := x*x*x
-	fourth := x*x*x*x
-
-	fmt.Println("Second degree = ", second)
-	fmt.Println("Third degree = ", third)
-	fmt.Println("Fourth degree = ", fourth)
+	fmt.Println((day)%7)
 }

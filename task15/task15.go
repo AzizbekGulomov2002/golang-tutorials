@@ -1,14 +1,18 @@
-// Given coordinate numbers with x1 and x2. Find distance their difference between
+// Given three-digit number. Replace it's unit and decimal places
 package main
 import "fmt"
 func main()  {
-	var x1, x2 float64
-	fmt.Print("Enter x1 = ")
-	fmt.Scan(&x1)
+	var num int // 324 -> 342
+	fmt.Print("Enter three-digit number = ")
+	fmt.Scanln(&num)
+	if num < 100 || num > 999{
+		fmt.Println("Please enter only tree-digit number")
+		return
+	}
 
-	fmt.Print("Enter x2 = ")
-	fmt.Scan(&x2)
+	a := (num / 100) * 100
+	b := ((num % 10) % 10) * 10
+	c := ((num / 10) % 10)
 
-	difference := (x2-x1)
-	fmt.Println("Difference = ", difference)
+	fmt.Println(a+b+c)
 }

@@ -1,27 +1,12 @@
-// Given three numbers. Result should be descending order
+// Given n seconds, generate it minutes and find it's remain
 package main
 import "fmt"
 func main()  {
-	var a,b,c float64
-	fmt.Print("Enter a = ")
-	fmt.Scan(&a)
+	var num uint
+	fmt.Print("Enter seconds = ")
+	fmt.Scanln(&num)
 
-	fmt.Print("Enter b = ")
-	fmt.Scan(&b)
+	remaining := num % 60
 
-	fmt.Print("Enter c = ")
-	fmt.Scan(&c)
-
-	// Bubble sort type
-	if a<b{
-		a,b=b,a
-	}
-	if a<c{
-		a,c = c,a
-	}
-	if b<c{
-		b,c = c,b
-	}
-
-	fmt.Println("Descending format = ", a,b,c)
+	fmt.Println(remaining)
 }

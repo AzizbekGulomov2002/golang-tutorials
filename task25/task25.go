@@ -1,12 +1,9 @@
-// Given Tempirature named "t". Find degree of Celsius. Tc = ((t-32)*5) / 9
-
+// Given days of week with numbers. 1st January Tuesday. 0-Sunday, 1-Monday ... 6-Saturday. Find which(1-365) numbers will which day of the week
 package main
 import "fmt"
 func main()  {
-	var t int
-	fmt.Print("Enter tempirature = ")
-	fmt.Scan(&t)
-
-	tc := (5*(t-32))/9
-	println("Tempirature Celsisus degree = ", tc)
+	var day uint
+	fmt.Print("Enter day = ")
+	fmt.Scanln(&day)
+	fmt.Println((day+1)%7)
 }

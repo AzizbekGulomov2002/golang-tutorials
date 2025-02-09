@@ -1,18 +1,20 @@
-// Give a and b named numbers. Find normal arithmetic value
+// Given decimal number. Find it's replace digits 
 package main
 import "fmt"
 func main()  {
-	var (
-		a float64
-		b float64
-	)
+	var num int
+	fmt.Print("Enter decimal number = ")
+	fmt.Scanln(&num)
 
-	fmt.Print("Enter side a = ")
-	fmt.Scan(&a)
+	if num < 10 || num > 99{
+		fmt.Println("Enter only two digit number")
+		return
+	}
 
-	fmt.Print("Enter side b = ")
-	fmt.Scan(&b)
+	decimal := num/10
+	unit := num%10
 
-	arithmetic := (a+b) / 2
-	fmt.Println("The normal arithmetic value is = ", arithmetic)
+	result := unit*10+decimal
+
+	fmt.Println(result)
 }

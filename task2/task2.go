@@ -1,11 +1,11 @@
-// Given a side of the square, it should return square 
+// Given mass with gramm. Find the whole mass in kg
+
 package main
 import "fmt"
 func main()  {
-	var num int
-	fmt.Print("Enter number = ")
-	fmt.Scan(&num)
-	fmt.Println("The square of this", num, "is = ", num*num)
+	var l int
+	fmt.Print("Enter kilogramm = ")
+	fmt.Scanln(&l)
+	mass := l / 1000
+	fmt.Println(mass)
 }
-
-

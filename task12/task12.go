@@ -1,17 +1,19 @@
-// Given 2 spheres radiuses. Find their surfaces and surface differences
+// Given three-digit number. Replace it's second and first units
 package main
 import "fmt"
 func main()  {
-	var r1, r2 float64
-	fmt.Print("Enter Radius 1 = ")
-	fmt.Scan(&r1)
+	var num int // 324 = 432
+	fmt.Print("Enter number  = ")
+	fmt.Scanln(&num)
 
-	fmt.Print("Enter Radius 2 = ")
-	fmt.Scan(&r2)
+	if num <100 || num > 999{
+		fmt.Println("Please enter only three-digit number")
+		return
+	}
+	a := ((num%100)%10) * 100
+	b := (num/100) * 10
+	c := ((num / 10) % 10) 
 
-	surface1 := 3.14*r1*r1
-	surface2 := 3.14*r2*r2
-	difference := surface1-surface2
+	fmt.Println(a+b+c)
 
-	fmt.Println("Surface 1 = ", surface1, "Surface 2 = ", surface2, "Difference = ", difference)
 }

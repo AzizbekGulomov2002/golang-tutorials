@@ -1,19 +1,19 @@
-// Given a and b sides of the right triangle. Find it's c side and Perimeter
+// Given three-digit number. Replace it 
 package main
-import (
-	"fmt"
-	"math"
-)
+import "fmt"
 func main()  {
-	var a,b int
-	fmt.Print("Enter a = ")
-	fmt.Scan(&a)
+	var num int
+	fmt.Print("Enter three-digit num = ")
+	fmt.Scanln(&num)
+	if num < 100 || num > 999{
+		fmt.Println("Please enter only three-digit number ")
+		return
+	}
 
-	fmt.Print("Enter b = ")
-	fmt.Scan(&b)
+	a := ((num%10)%10)*100
+	b := ((num/10)%10)*10
+	c := (num/100)
 
-	hypotenuse := math.Sqrt(float64(a*a + b*b))
-	perimeter := a+b+int(hypotenuse)
-	fmt.Println("Hypotenuse = ", hypotenuse)
-	fmt.Println("Perimeter = ",perimeter)
+	fmt.Println(a+b+c)
+
 }

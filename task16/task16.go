@@ -1,18 +1,17 @@
-// Given a,b,c name points. Find a*b+a*c+b*c
+// Given four-digit number. Find it's hundred's point
 package main
-
 import "fmt"
 func main()  {
-	var a,b,c float64
-	fmt.Print("Enter A = ")
-	fmt.Scan(&a)
+	var num int // 1234 -> 2
+	fmt.Print("Enter four-digit number = ")
+	fmt.Scanln(&num)
 
-	fmt.Print("Enter B = ")
-	fmt.Scan(&b)
+	if num < 1000 || num > 9999{
+		fmt.Println("Please enter four-digit number")
+		return
+	}
 
-	fmt.Print("Enter c = ")
-	fmt.Scan(&c)
+	a := (num / 100)%10
+	fmt.Println(a)
 
-	sum := (a*b+a*c+b*c)
-	fmt.Println("Summ of these numbers = ", sum)
 }
