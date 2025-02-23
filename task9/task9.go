@@ -1,19 +1,18 @@
-// Given three digit number. Find it's decimal and unit part of it
 package main
 import "fmt"
 func main()  {
-	var num int
-	fmt.Print("Enter three digit number = ")
-	fmt.Scanln(&num)
+	var x,y int
+	fmt.Print(("Enter x = "))
+	fmt.Scanln(&x)
+	fmt.Print("Enter y = ")
+	fmt.Scanln(&y)
 
-	if num < 100 || num > 999{
-		fmt.Println("Please enter only three digit")
-		return
+	if x==0 && y==0{
+		fmt.Println("Neither")
+	}else if x%2!=0 || y%2!=0{
+		fmt.Println(true)
+	}else{
+		fmt.Println(false)
 	}
-
-	decimal := (num / 10 ) % 10
-	unit  := num % 10
-
-	fmt.Println(decimal, unit)
 
 }

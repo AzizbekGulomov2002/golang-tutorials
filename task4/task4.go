@@ -1,14 +1,16 @@
-// Given 2 length of cross lines. Divide each other
 package main
 import "fmt"
 func main()  {
-	var a float64
-	var b float64
-	fmt.Print("Enter a = ")
-	fmt.Scanln(&a)
-	fmt.Print("Enter b = ")
-	fmt.Scanln(&b)
+	var x int
+	var y int
+	fmt.Print("enter x = ")
+	fmt.Scanln(&x)
+	fmt.Print("enter y = ")
+	fmt.Scanln(&y)
 
-	result := a/b
-	fmt.Println("Result = ", result)
+	if x>2 && y<=3{
+		fmt.Println(true)
+	}else{
+		fmt.Println(false)
+	}
 }

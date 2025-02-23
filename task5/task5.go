@@ -1,13 +1,15 @@
-// Given decimal number. Return its decimal and unit parts
 package main
 import "fmt"
 func main()  {
-	var num int
-	fmt.Print("Enter decimal number = ")
-	fmt.Scanln(&num)
-
-	decimal := num / 10
-	unit := num % 10
-
-	fmt.Println("Decimal part:", decimal, "Unit part:", unit)
-}b
+	var x,y int
+	fmt.Print("Enter x = ")
+	fmt.Scanln(&x)
+	fmt.Print("Enter y = ")
+	fmt.Scanln(&y)
+	
+	if x >= 0 && y < -2{
+		fmt.Println(true)
+	}else{
+		fmt.Println(false)
+	}
+}

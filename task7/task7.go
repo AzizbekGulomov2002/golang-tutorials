@@ -1,20 +1,20 @@
-// Given decimal number. Find it's replace digits 
 package main
 import "fmt"
 func main()  {
-	var num int
-	fmt.Print("Enter decimal number = ")
-	fmt.Scanln(&num)
+	var x,y,z int
+	fmt.Print("Enter x = ")
+	fmt.Scanln(&x)
+	fmt.Print("Enter y = ")
+	fmt.Scanln(&y)
+	fmt.Print("Enter z = ")
+	fmt.Scanln(&z)
 
-	if num < 10 || num > 99{
-		fmt.Println("Enter only two digit number")
-		return
+	if (x<=y && y<=z) || (z <= y && y<=x){
+		fmt.Println(true)
+	}else{
+		fmt.Println(false)
 	}
-
-	decimal := num/10
-	unit := num%10
-
-	result := unit*10+decimal
-
-	fmt.Println(result)
 }
+
+// example: x-1, y-2, z-3 -> True
+// x-5, y-10, z-1 -> False

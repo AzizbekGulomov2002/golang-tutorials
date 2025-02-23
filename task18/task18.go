@@ -1,10 +1,17 @@
-// Given n second, Generate it minute
-package main
+package main 
 import "fmt"
 func main()  {
-	var num int
-	fmt.Print("Enter second = ")
-	fmt.Scanln(&num)
+	var x,y,z int
+	fmt.Print("Enter x = ")
+	fmt.Scanln(&x)
+	fmt.Print("Enter y = ")
+	fmt.Scanln(&y)
+	fmt.Print("Enter z = ")
+	fmt.Scanln(&z)
 
-	fmt.Println(num/60)
+	if x==y || x==z || z==x{
+		fmt.Println(true)
+	}else{
+		fmt.Println(false)
+	}
 }

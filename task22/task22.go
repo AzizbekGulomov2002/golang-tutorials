@@ -1,10 +1,21 @@
-// Given n seconds, generate it's hours and remaining seconds
 package main
 import "fmt"
 func main()  {
-	var num uint
-	fmt.Print("Enter number = ")
-	fmt.Scanln(&num)
+	var x uint
+	fmt.Print("Enter x = ")
+	fmt.Scanln(&x)
 
-	fmt.Println(num%100)
+	if x<100 || x>999{
+		fmt.Println(false)
+		return
+	}
+	digit1 := x/100
+	digit2 := (x/10)%10
+	digit3 := x%10
+
+	if (digit1 < digit2 && digit2<digit3) || (digit1>digit2 && digit2>digit3){
+		fmt.Println(true)
+	}else{
+		fmt.Println(false)
+	}
 }

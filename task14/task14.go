@@ -1,19 +1,19 @@
-// Given three-digit number. Replace it's hundred and decimal points
 package main
 import "fmt"
 func main()  {
-	var num int // 324 -> 234
-	fmt.Print("Enter three-digit number = ")
-	fmt.Scanln(&num)
-	if num < 100 || num > 999{
-		fmt.Println("Please enter only three-digit num")
-		return
+	var x,y,z int
+	fmt.Print("Enter x = ")
+	fmt.Scanln(&x)
+	fmt.Print("Enter y = ")
+	fmt.Scanln(&y)
+	fmt.Print("Enter z = ")
+	fmt.Scanln(&z)
+
+	if x==0 || y==0 || z==0{
+		fmt.Println("Neither")
+	}else if (x>0 && y<=0 && z<=0) || (y>0 && x<=0 && z<=0) || (z>0 && x<=0 && y<=0){
+		fmt.Println(true)
+	}else{
+		fmt.Println(false)
 	}
-
-	a := ((num/10)%10) * 100
-	b := ((num/100)) * 10
-	c := ((num%10)%10)
-
-	fmt.Println(a+b+c)
-
 }

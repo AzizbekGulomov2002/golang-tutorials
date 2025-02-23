@@ -1,19 +1,19 @@
-// Given three-digit number. Replace it's second and first units
 package main
 import "fmt"
 func main()  {
-	var num int // 324 = 432
-	fmt.Print("Enter number  = ")
-	fmt.Scanln(&num)
+	var x,y,z int
+	fmt.Print("Enter x = ")
+	fmt.Scanln(&x)
+	fmt.Print("Enter y = ")
+	fmt.Scanln(&y)
+	fmt.Print("Enter z = ")
+	fmt.Scanln(&z)
 
-	if num <100 || num > 999{
-		fmt.Println("Please enter only three-digit number")
-		return
+	if x==0 || y==0 || z==0{
+		fmt.Println("Neither")
+	}else if x>0 && y>0 && z>0{
+		fmt.Println(true)
+	}else{
+		fmt.Println(false)
 	}
-	a := ((num%100)%10) * 100
-	b := (num/100) * 10
-	c := ((num / 10) % 10) 
-
-	fmt.Println(a+b+c)
-
 }

@@ -1,12 +1,20 @@
-// Given n seconds, generate it minutes and find it's remain
 package main
-import "fmt"
+
+import (
+	"fmt"
+)
 func main()  {
-	var num uint
-	fmt.Print("Enter seconds = ")
-	fmt.Scanln(&num)
+	var x,y,z int
+	fmt.Print("Enter x = ")
+	fmt.Scanln(&x)
+	fmt.Print("Enter y = ")
+	fmt.Scanln(&y)
+	fmt.Print("Enter z = ")
+	fmt.Scanln(&z)
 
-	remaining := num % 60
-
-	fmt.Println(remaining)
+	if x==y || x==z || z==y{
+		fmt.Println(false)
+	}else{
+		fmt.Println(true)
+	}
 }
