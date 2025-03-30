@@ -1,32 +1,22 @@
 package main
 import "fmt"
+
 func main()  {
-	var x,y,z int
-	var positiveCount, negativeCount int
-	fmt.Print("Enter x = ")
-	fmt.Scanln(&x)
-	fmt.Print("Enter y = ")
-	fmt.Scanln(&y)
-	fmt.Print("Enter z = ")
-	fmt.Scanln(&z)
+	var month uint
+	fmt.Print("Enter month num = ")
+	fmt.Scanln(&month)
 
-	if x>0{
-		positiveCount++
-	}else if x<0{
-		negativeCount++
+	switch {
+	case month == 12 || month==1 || month==2:
+		fmt.Println("Winter")
+	case month >= 3 && month <= 5:
+		fmt.Println("Spring")
+	case month >= 6 && month <= 8:
+		fmt.Println("Summer")
+	case month >= 9 && month <= 11:
+		fmt.Println("Autumn")
+	default:
+		fmt.Println("Invalid input")
 	}
 
-	if y>0{
-		positiveCount++
-	}else if y<0{
-		negativeCount++
-	}
-
-	if z>0{
-		positiveCount++
-	} else if z<0{
-		negativeCount++
-	}
-
-	fmt.Printf("Positives: %d Negatives: %d\n", positiveCount, negativeCount)
 }

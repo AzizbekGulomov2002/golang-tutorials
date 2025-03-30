@@ -1,18 +1,28 @@
 package main
 import "fmt"
+// a**2 + b**2 = c**2
 func main()  {
-	var x,y,z uint
+	var a,b,c int
 	fmt.Print("Enter x = ")
-	fmt.Scanln(&x)
+	fmt.Scanln(&a)
 	fmt.Print("Enter y = ")
-	fmt.Scanln(&y)
+	fmt.Scanln(&b)
 	fmt.Print("Enter z = ")
-	fmt.Scanln(&z)
-	if x<y && x<z{
-		fmt.Println(x)
-	} else if y<x && y<z{
-		fmt.Println(y)
+	fmt.Scanln(&c)
+
+	var hypotenuse, side1, side2 int
+	if a>b && a>c{
+		hypotenuse, side1, side2 = a,b,c
+	} else if b>a && b>c{
+		hypotenuse, side1, side2 = b,a,c
 	} else{
-		fmt.Println(z)
+		hypotenuse, side1, side2 = c,a,b
+	}
+	
+	switch side1*side1 + side2*side2 == hypotenuse*hypotenuse {
+	case true:
+		fmt.Println("Right Triangle")
+	default:
+		fmt.Println("Not a Right Triangle")
 	}
 }

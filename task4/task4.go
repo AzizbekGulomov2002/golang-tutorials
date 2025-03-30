@@ -1,32 +1,16 @@
 package main
 import "fmt"
 func main()  {
-	var x,y,z int
-	var positiveCount, negativeCount int
-	fmt.Print("Enter x = ")
+	var x uint
+	fmt.Print("Enter score = ")
 	fmt.Scanln(&x)
-	fmt.Print("Enter y = ")
-	fmt.Scanln(&y)
-	fmt.Print("Enter z = ")
-	fmt.Scanln(&z)
 
-	if x>0{
-		positiveCount++
-	} else if x<0{
-		negativeCount++
+	switch {
+	case x > 0 && x < 50:
+		fmt.Println(3)
+	case x>51 && x<70:
+		fmt.Println(4)
+	case x>71 && x<=100:
+		fmt.Println(5)
 	}
-
-	if y>0{
-		positiveCount++
-	}else if y<0{
-		negativeCount++
-	}
-
-	if z>0{
-		positiveCount++
-	} else if z<0{
-		negativeCount++
-	}
-
-	fmt.Printf("Positives: %d, Negatives: %d\n", positiveCount, negativeCount)
 }

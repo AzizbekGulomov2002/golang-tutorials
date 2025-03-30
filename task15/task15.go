@@ -1,31 +1,19 @@
 package main
-import "fmt"
+import (
+	"fmt"
+	"math"
+)
+
 func main()  {
-	var x,y,z uint
+	var x int
 	fmt.Print("Enter x = ")
 	fmt.Scanln(&x)
-	fmt.Print("Enter y = ")
-	fmt.Scanln(&y)
-	fmt.Print("Enter z = ")
-	fmt.Scanln(&z)
 
-	greatest := x
-	if y>greatest{
-		greatest=y
+	sqrt := int(math.Sqrt(float64(x)))
+	switch sqrt*sqrt{
+	case x:
+		fmt.Println("Perfect square = ", sqrt)
+	default:
+		fmt.Println("Not a perfect square")
 	}
-	if z>greatest{
-		greatest=z
-	}
-
-	smallest := x
-	if y<smallest{
-		smallest=y
-	}
-	if z<smallest{
-		smallest=z
-	}
-
-	fmt.Println("Greatest :", greatest)
-	fmt.Println("Smallest: ", smallest)
-	fmt.Println("Sum: ", greatest+smallest)
 }

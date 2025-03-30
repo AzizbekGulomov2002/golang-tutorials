@@ -1,12 +1,15 @@
 package main
 import "fmt"
+
 func main()  {
 	var x int
 	fmt.Print("Enter x = ")
 	fmt.Scanln(&x)
-	if x<0{
-		fmt.Println(x-2)
-	}else{
-		fmt.Println(10)
+
+	switch x%2{ // devide number by 2 and remains cases
+	case 0:
+		fmt.Println("Even")
+	case 1,-1:
+		fmt.Println("Odd")
 	}
 }

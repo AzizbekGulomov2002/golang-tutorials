@@ -2,30 +2,16 @@ package main
 import "fmt"
 
 func main()  {
-	var x,y,z uint
-	fmt.Print("Enter x = ")
-	fmt.Scanln(&x)
-	fmt.Print("Enter y = ")
-	fmt.Scanln(&y)
-	fmt.Print("Enter z = ")
-	fmt.Scanln(&z)
+	var word rune
+	fmt.Print("Enter word = ")
+	fmt.Scanln(&word)
 
-	greatest := x
-	if y>greatest{
-		greatest=y
+	switch{
+	case word >= 'A' && word >= 'Z':
+		fmt.Println("Uppercase")
+	case word >= 'a' && word>= 'z':
+		fmt.Println("Lowercase")
+	default:
+		fmt.Println("Not a letter")
 	}
-	if z>greatest{
-		greatest=z
-	}
-
-	smallest := x
-	if y<smallest{
-		smallest=y
-	}
-	if z<smallest{
-		smallest=z
-	}
-
-	fmt.Println("Greatest num: ", greatest)
-	fmt.Println("Smallest num: ", smallest)
 }

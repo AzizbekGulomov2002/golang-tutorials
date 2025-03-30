@@ -1,18 +1,13 @@
 package main
 import "fmt"
 func main()  {
-	var x,y int
-	fmt.Print("Enter x = ")
+	var x string
+	fmt.Print("Enter word = ")
 	fmt.Scanln(&x)
-	fmt.Print("Enter y = ")
-	fmt.Scanln(&y)
-
-	if x>y{
-		fmt.Println(2)
-	}else if x==y{
-		fmt.Println("Both equal")
-	}else{
-		fmt.Println(1)
+	switch x{
+	case "a","e","o","i","u", "A","E","O","I","U":
+		fmt.Println("Vowel")
+	default:
+		fmt.Println("Consonant")
 	}
-
 }

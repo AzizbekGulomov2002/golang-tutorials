@@ -1,23 +1,19 @@
 package main
 import "fmt"
 func main()  {
-	var a,b,c,d,e int
-	fmt.Print("Enter a = ")
-	fmt.Scanln(&a)
+	var x string
+	fmt.Print("Enter string = ")
+	fmt.Scanln(&x)
 
-	fmt.Print("Enter b = ")
-	fmt.Scanln(&b)
+	if len(x) == 0{
+		fmt.Println("Empty word")
+	}
 
-	fmt.Print("Enter c = ")
-	fmt.Scanln(&c)
-
-	fmt.Print("Enter d = ")
-	fmt.Scanln(&d)
-
-	fmt.Print("Enter e = ")
-	fmt.Scanln(&e)
-
-	fmt.Println((a+b+c+d+e)/5)
-
-
+	firstChar := rune(x[0]) // get first word
+	switch firstChar{
+	case 0:
+		fmt.Println("Start with even letter")
+	default:
+		fmt.Println("Starts with an odd letter")
+	}
 }

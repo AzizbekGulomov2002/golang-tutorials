@@ -1,23 +1,28 @@
 package main
 import "fmt"
 func main()  {
-	var x,y int
+	var x,y,z int
 	fmt.Print("Enter x = ")
 	fmt.Scanln(&x)
-
 	fmt.Print("Enter y = ")
 	fmt.Scanln(&y)
+	fmt.Print("Enter z = ")
+	fmt.Scanln(&z)
+
+	if x>y{
+		x,y = y,x
+	}
+	if y>z{
+		y,z = z,y
+	}
+	if x>y{
+		x,y = y,x
+	}
 
 	switch{
-	case x>0 && y>0:
-		fmt.Println(1)		
-	case x<0 && y>0:
-		fmt.Println(2)
-	case x<0 && y<0:
-		fmt.Println(3)
-	case x>0 && y<0:
-		fmt.Println(4)
+	case x<=y && y<=z:
+		fmt.Println(x,y,z)
 	default:
-		fmt.Println(0)
+		fmt.Println("Invalid input")
 	}
 }

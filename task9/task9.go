@@ -1,15 +1,19 @@
 package main
 import "fmt"
-func main()  {
-    var x,y float64
-    fmt.Print("Enter x = ")
-    fmt.Scanln(&x)
-    fmt.Print("Enter y = ")
-    fmt.Scanln(&y)
 
-    if y>x{
-        fmt.Println(x,y)
-    } else{
-        fmt.Println(y,x)
+func main()  {
+    var year int
+    fmt.Print("Enter a year = ")
+    fmt.Scanln(&year)
+
+    switch{
+    case year%400 ==0:
+        fmt.Println("Leap year")
+    case year%100==0:
+        fmt.Println("Not a leap year")
+    case year%4==0:
+        fmt.Println("Leap year")
+    default:
+        fmt.Println("Not a Leap year")
     }
 }

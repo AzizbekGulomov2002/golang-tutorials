@@ -6,11 +6,11 @@ func main()  {
 	fmt.Scanln(&x)
 	fmt.Print("Enter y = ")
 	fmt.Scanln(&y)
-	if x>y{
-		fmt.Println(x)
-	}else if x==y{
-		fmt.Println("Both equal")
-	}else{
-		fmt.Println(y)
+
+	switch {
+	case x==y:
+		fmt.Println("Square")
+	default:
+		fmt.Println("Default")
 	}
 }

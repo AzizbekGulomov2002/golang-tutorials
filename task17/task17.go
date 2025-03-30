@@ -2,24 +2,26 @@ package main
 import "fmt"
 
 func main()  {
-	var x,y,z int64
-	fmt.Print("Enter x = ")
-	fmt.Scanln(&x)
+	var day string
+	fmt.Print("Enter day = ")
+	fmt.Scanln(&day)
 
-	fmt.Print("Enter y = ")
-	fmt.Scanln(&y)
-
-	fmt.Print("Enter z = ")
-	fmt.Scanln(&z)
-
-	if x > 0 && y > 0 && z > 0 || x < 0 && y < 0 && z < 0 {
-		fmt.Println("Has no different sign number")
-	} else if x*y > 0 {
-		fmt.Println(2, 3) 
-	} else if x*z > 0 {
-		fmt.Println(1, 3) 
-	} else {
-		fmt.Println(1, 2) 
+	switch day{
+	case "Monday":
+		fmt.Println(1)
+	case "Tuesday":
+		fmt.Println(2)
+	case "Wednsday":
+		fmt.Println(3)
+	case "Thursday":
+		fmt.Println(4)
+	case "Friday":
+		fmt.Println(5)
+	case "Saturday":
+		fmt.Println(6)
+	case "Sunday":
+		fmt.Println(7)
+	default:
+		fmt.Println("Error input")
 	}
-
 }
