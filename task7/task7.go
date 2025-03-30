@@ -1,20 +1,18 @@
 package main
 import "fmt"
 func main()  {
-	var x,y,z int
+	var x,y int
 	fmt.Print("Enter x = ")
 	fmt.Scanln(&x)
 	fmt.Print("Enter y = ")
 	fmt.Scanln(&y)
-	fmt.Print("Enter z = ")
-	fmt.Scanln(&z)
 
-	if (x<=y && y<=z) || (z <= y && y<=x){
-		fmt.Println(true)
+	if x>y{
+		fmt.Println(2)
+	}else if x==y{
+		fmt.Println("Both equal")
 	}else{
-		fmt.Println(false)
+		fmt.Println(1)
 	}
-}
 
-// example: x-1, y-2, z-3 -> True
-// x-5, y-10, z-1 -> False
+}

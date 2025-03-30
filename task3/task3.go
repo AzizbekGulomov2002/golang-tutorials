@@ -4,11 +4,9 @@ func main()  {
 	var x int
 	fmt.Print("Enter x = ")
 	fmt.Scanln(&x)
-	if x%2==0{
-		fmt.Println("Even number")
-	} else if x == 0{
-		fmt.Println("neither")
-	} else{
-		fmt.Println("Odd number")
+	if x<0{
+		fmt.Println(x-2)
+	}else{
+		fmt.Println(10)
 	}
 }

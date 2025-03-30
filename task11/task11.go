@@ -1,17 +1,23 @@
 package main
 import "fmt"
+func sumofDigits(n uint) uint {
+	var sum uint
+	for n>0{
+		sum+=n%10
+		n/=10
+	}
+	return sum
+}
 func main()  {
-	var x,y int
+	var x,y uint
 	fmt.Print("Enter x = ")
 	fmt.Scanln(&x)
 	fmt.Print("Enter y = ")
 	fmt.Scanln(&y)
-
-	if x==0 || y==0{
-		fmt.Println("Neither")
-	}else if x%2!=0 && y%2!=0{
-		fmt.Println(true)
+	if x==y{
+		fmt.Println(0,0)
 	}else{
-		fmt.Println(false)
+		fmt.Println("Sum of digit x = ",sumofDigits(x))
+		fmt.Println("Sum of digit y = ", sumofDigits(y))
 	}
 }

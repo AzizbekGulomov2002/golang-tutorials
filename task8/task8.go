@@ -6,12 +6,12 @@ func main()  {
 	fmt.Scanln(&x)
 	fmt.Print("Enter y = ")
 	fmt.Scanln(&y)
-	
-	if x==0 && y==0{
-		fmt.Println("Neither")
-	}else if x%2==0 || y%2==0{
-		fmt.Println(true)
+
+	if x>y{
+		fmt.Println(x, y)
+	}else if x==y{
+		fmt.Println("Both are equal")
 	}else{
-		fmt.Println(false)
+		fmt.Println(y,x)
 	}
 }

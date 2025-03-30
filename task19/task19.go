@@ -1,19 +1,23 @@
 package main
 import "fmt"
 func main()  {
-	var x,y,z int
-	fmt.Print("Enter x = ")
-	fmt.Scanln(&x)
-	fmt.Print("Enter y = ")
-	fmt.Scanln(&y)
-	fmt.Print("Enter z = ")
-	fmt.Scanln(&z)
+	var a,b,c,d,e int
+	fmt.Print("Enter a = ")
+	fmt.Scanln(&a)
 
-	if x==0 && y==0 && z==0{
-		fmt.Println("Neither")
-	}else if x==-y || y==-z || z==-x{
-		fmt.Println(true)
-	}else{
-		fmt.Println(false)
-	}
+	fmt.Print("Enter b = ")
+	fmt.Scanln(&b)
+
+	fmt.Print("Enter c = ")
+	fmt.Scanln(&c)
+
+	fmt.Print("Enter d = ")
+	fmt.Scanln(&d)
+
+	fmt.Print("Enter e = ")
+	fmt.Scanln(&e)
+
+	fmt.Println((a+b+c+d+e)/5)
+
+
 }

@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="27b0f248-da84-4eda-84f2-539acd63b9ed" name="Changes" comment="" />
+    <list default="true" id="27b0f248-da84-4eda-84f2-539acd63b9ed" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/task1/task1.go" beforeDir="false" afterPath="$PROJECT_DIR$/task1/task1.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task2/task2.go" beforeDir="false" afterPath="$PROJECT_DIR$/task2/task2.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/task3.go" beforeDir="false" afterPath="$PROJECT_DIR$/task3/task3.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task4/task4.go" beforeDir="false" afterPath="$PROJECT_DIR$/task4/task4.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task5/task5.go" beforeDir="false" afterPath="$PROJECT_DIR$/task5/task5.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task6/task6.go" beforeDir="false" afterPath="$PROJECT_DIR$/task6/task6.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task7/task7.go" beforeDir="false" afterPath="$PROJECT_DIR$/task7/task7.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task8/task8.go" beforeDir="false" afterPath="$PROJECT_DIR$/task8/task8.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task9/task9.go" beforeDir="false" afterPath="$PROJECT_DIR$/task9/task9.go" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,18 +28,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;lesson-1&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/hp-root/golang&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "lesson-4",
+    "last_opened_file_path": "/home/hp-root/golang"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-1b1018131e27-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.22562.180" />
+        <option value="bundled-python-sdk-14705d77f0bb-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.25659.43" />
       </set>
     </attachedChunks>
   </component>

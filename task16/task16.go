@@ -1,12 +1,18 @@
 package main
 import "fmt"
+
 func main()  {
-	var x int
+	var x,y,z float64
 	fmt.Print("Enter x = ")
 	fmt.Scanln(&x)
-	if x>9 && x<100 && x%2==0{
-		fmt.Println(true)
-	}else{
-		fmt.Println(false)
+	fmt.Print("Enter y = ")
+	fmt.Scanln(&y)
+	fmt.Print("Enter z = ")
+	fmt.Scanln(&z)
+
+	if x>y && y>z{
+		fmt.Println(x*2, y*2, z*2)
+	} else{
+		fmt.Println(x/2, y/2, z/2)
 	}
 }

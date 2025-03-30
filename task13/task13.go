@@ -1,7 +1,8 @@
 package main
 import "fmt"
+
 func main()  {
-	var x,y,z int
+	var x,y,z uint
 	fmt.Print("Enter x = ")
 	fmt.Scanln(&x)
 	fmt.Print("Enter y = ")
@@ -9,11 +10,11 @@ func main()  {
 	fmt.Print("Enter z = ")
 	fmt.Scanln(&z)
 
-	if x ==0 && y==0 && z==0{
-		fmt.Println("Neither")
-	}else if x>0 || y>0 || z>0{
-		fmt.Println(true)
-	}else{
-		fmt.Println(false)
+	if x<y && y<z{
+		fmt.Println(y)
+	} else if x>y && y<z{
+		fmt.Println(x)
+	} else{
+		fmt.Println(z)
 	}
 }
